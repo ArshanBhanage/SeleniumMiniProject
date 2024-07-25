@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AjioSuite">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+
+    <!-- Local tests -->
+    <test name="LocalTests" parallel="classes" thread-count="5">
+        <classes>
+            <class name="testcase.tc1" />
+            <class name="testcase.tc2" />
+            <class name="testcase.tc3" />
+            <class name="testcase.tc4" />
+            <class name="testcase.tc5" />
+            <class name="testcase.tc6a" />
+            <class name="testcase.tc6b" />
+        </classes>
+    </test>
+
+    <!-- Grid tests -->
+    <test name="GridTests" parallel="classes" thread-count="5">
+        <parameter name="gridURL" value="http://192.168.0.108:4444/wd/hub" />
+        <classes>
+            <class name="testcase.tc7" />
+            <class name="testcase.tc8" />
+            <class name="testcase.tc9" />
+            <class name="testcase.tc10" />
+            <class name="testcase.tc11" />
+            <class name="testcase.tc12" />
+        </classes>
+    </test>
+</suite>

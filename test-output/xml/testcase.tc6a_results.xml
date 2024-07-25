@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LocalTests"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="33.464">
+  <properties />
+  
+  
+            <testcase name="searchSerum" time="33.464" classname="testcase.tc6a" />
+      
+</testsuite>

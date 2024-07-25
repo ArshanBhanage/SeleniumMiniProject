@@ -1,0 +1,6 @@
+[66556:259:0722/214838.394255:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 126.0.6478.183 (not a warning)
+[66556:259:0722/214838.561636:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[66556:259:0722/214838.574166:WARNING:browser_management_service.cc(128)] EnterpriseLogoUrl fetch failed with error code -1 and MIME type 
+[66556:259:0722/214839.863134:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AdF4I77eOaktGdJ2rC0jKB3j374SvooXeEePTHFOuxGbngdrIBAwqEkk5HccTG86uObgrqq2cYhb0A&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S705515323%3A1721665119674015 (0)
+[66556:259:0722/214848.932276:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:265059
+[66556:259:0722/220013.331535:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

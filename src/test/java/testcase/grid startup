@@ -1,0 +1,38 @@
+FOR HUB (where the test code is present):
+java -jar selenium-server-4.23.0.jar hub
+
+FOR NODES:
+1) open the folder where selenium grid jar file is placed
+2) make "node-config.json" file and paste the text below in it
+   NOTE: make sure to replace the ip of the hub (eg: "hub": "http://192.168.0.108:4444/grid/register" where ip is: "http://192.168.0.108:4444")
+
+
+{
+  "capabilities": [
+    {
+      "browserName": "chrome",
+      "maxInstances": 5
+    },
+    {
+      "browserName": "firefox",
+      "maxInstances": 5
+    }
+  ],
+  "configuration": {
+    "cleanUpCycle": 2000,
+    "timeout": 30000,
+    "maxSession": 5,
+    "register": true,
+    "registerCycle": 5000,
+    "hub": "http://192.168.0.108:4444/grid/register"
+  }
+}
+
+3) restart the termnial and run the following command:
+NOTE: make sure to replace the ip of the hub (eg: "hub": "http://192.168.0.108:4444/grid/register" where ip is: "http://192.168.0.108:4444")
+
+java -jar selenium-server-4.23.0.jar node --hub http://192.168.0.108:4444/grid/register --config node-config.json
+
+
+
+

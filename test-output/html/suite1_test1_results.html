@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - LocalTests</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>LocalTests</h1>
+<p>
+  Test duration: 129.276s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">testcase.tc2</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testcase2
+      </td>
+  <td class="duration">
+    10.730s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found<br/>
+&nbsp; (Session info: chrome=126.0.6478.183)<br/>
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception<br/>
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;<br/>
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [66cf9fe0fb6298a4f1b661dd4c4ac44a, clickElement {id=f.B64ED54F841C4D720A05D7E6E3437CA8.d.225554D23816954C654E9F72CB74D1F4.e.137}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/fz/kpzlfh_x4yg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49898/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Element: [[ChromeDriver: chrome on mac (66cf9fe0fb6298a4f1b661dd4c4ac44a)] -&gt; xpath: //div[@class=&apos;column column-2&apos;]//a[@title=&apos;Jackets &amp; Coats&apos;][normalize-space()=&apos;Jackets &amp; Coats&apos;]]<br/>
+Session ID: 66cf9fe0fb6298a4f1b661dd4c4ac44a</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)<br />
+              org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)<br />
+              testcase.tc2.testcase2(tc2.java:23)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:580)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)<br />
+              org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+              java.base/java.lang.Thread.run(Thread.java:1570)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">testcase.tc3</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  Test1
+      </td>
+  <td class="duration">
+    10.725s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found<br/>
+&nbsp; (Session info: chrome=126.0.6478.183)<br/>
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception<br/>
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;<br/>
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [66cf9fe0fb6298a4f1b661dd4c4ac44a, actions {actions=[org.openqa.selenium.interactions.Sequence@2d3ae7cc]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/fz/kpzlfh_x4yg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49898/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 66cf9fe0fb6298a4f1b661dd4c4ac44a</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)<br />
+              org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)<br />
+              org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:568)<br />
+              testcase.tc3.Test1(tc3.java:29)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:580)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)<br />
+              org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+              java.base/java.lang.Thread.run(Thread.java:1570)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">testcase.tc4</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  test
+      </td>
+  <td class="duration">
+    21.937s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: element not found<br/>
+&nbsp; (Session info: chrome=126.0.6478.183)<br/>
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br/>
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;<br/>
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [66cf9fe0fb6298a4f1b661dd4c4ac44a, clickElement {id=f.B64ED54F841C4D720A05D7E6E3437CA8.d.4AB3FBF8C9865D37398EB712E6DAFB99.e.166}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/fz/kpzlfh_x4yg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49898/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Element: [[ChromeDriver: chrome on mac (66cf9fe0fb6298a4f1b661dd4c4ac44a)] -&gt; xpath: //div[contains(@class,&apos;column column-2&apos;)]//a[contains(@title,&apos;Kurtas&apos;)][normalize-space()=&apos;Kurtas&apos;]]<br/>
+Session ID: 66cf9fe0fb6298a4f1b661dd4c4ac44a</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)<br />
+              org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)<br />
+              testcase.tc4.test(tc4.java:29)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:580)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)<br />
+              org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+              java.base/java.lang.Thread.run(Thread.java:1570)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">testcase.tc5</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  function1
+      </td>
+  <td class="duration">
+    21.949s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:60,&quot;value&quot;:&quot;https://www.ajio.com/s/brand-carlton-london has no size and location&quot;}<br/>
+&nbsp; (Session info: chrome=126.0.6478.183)<br/>
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;<br/>
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [66cf9fe0fb6298a4f1b661dd4c4ac44a, actions {actions=[org.openqa.selenium.interactions.Sequence@66ff2cf8]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/fz/kpzlfh_x4yg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49898/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 66cf9fe0fb6298a4f1b661dd4c4ac44a</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)<br />
+              org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)<br />
+              org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:568)<br />
+              testcase.tc5.function1(tc5.java:18)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:580)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)<br />
+              org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+              java.base/java.lang.Thread.run(Thread.java:1570)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">testcase.tc1</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  test1
+      </td>
+  <td class="duration">
+    0.002s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">testcase.tc6a</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  searchSerum
+      </td>
+  <td class="duration">
+    33.464s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">testcase.tc6b</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  searchSerum
+      </td>
+  <td class="duration">
+    30.469s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

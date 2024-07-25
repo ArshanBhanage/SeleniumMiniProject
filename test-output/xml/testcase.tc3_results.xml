@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LocalTests"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="10.725">
+  <properties />
+            <testcase name="Test1" time="10.725" classname="testcase.tc3">
+                <failure type="org.openqa.selenium.StaleElementReferenceException"
+                  message="stale element reference: stale element not found
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [66cf9fe0fb6298a4f1b661dd4c4ac44a, actions {actions=[org.openqa.selenium.interactions.Sequence@2d3ae7cc]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/fz/kpzlfh_x4yg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49898/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66cf9fe0fb6298a4f1b661dd4c4ac44a"
+              >
+<![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [66cf9fe0fb6298a4f1b661dd4c4ac44a, actions {actions=[org.openqa.selenium.interactions.Sequence@2d3ae7cc]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: /var/folders/fz/kpzlfh_x4yg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49898/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66cf9fe0fb6298a4f1b661dd4c4ac44a
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+  org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
+  org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
+  org.openqa.selenium.interactions.Actions.perform(Actions.java:568)
+  testcase.tc3.Test1(tc3.java:29)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>
